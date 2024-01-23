@@ -1,7 +1,7 @@
 {
-    "name": "BgtxD",
+    "name": "SnxD",
     "description": "ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ, ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ ᴡɪᴛʜ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴘʏ-ᴛɢᴄᴀʟʟꜱ.",
-    "repository": "https://github.com/BikashHalderNew/Bgtplayer",
+    "repository": "https://github.com/Snoffcial/Snmusicbot",
     "logo": "https://telegra.ph/file/4d7a997a6c8c4eb406829.jpg",
     "keywords": [
     "python3",
@@ -36,7 +36,7 @@
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters",
-        "value": "🌟⃝🌸𓆩🇧𝗚𝗧🎸🇲𝗨𝗦𝗜𝗖🎸🇧𝗢𝗧𓆪💫⃟👑 ",
+        "value": "Sn x 🎶 music ",
         "required": true
       },
       "OWNER_ID": {

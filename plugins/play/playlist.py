@@ -6,19 +6,19 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from Bikash.config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
-from Bikash.Bgt import get_command
-from Bikash import Carbon, YouTube, app
-from Bikash.utils.database import (delete_playlist, get_playlist,
+from Snteam.config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
+from Snteam.Bgt import get_command
+from Snteam import Carbon, YouTube, app
+from Snteam.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from Bikash.utils.decorators.language import language, languageCB
-from Bikash.utils.inline.play import close_keyboard
-from Bikash.utils.inline.playlist import (botplaylist_markup,
+from Snteam.utils.decorators.language import language, languageCB
+from Snteam.utils.inline.play import close_keyboard
+from Snteam.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from Bikash.utils.pastebin import Bikashhbin
-from Bikash.utils.stream.stream import stream
+from Snteam.utils.pastebin import Snteamhbin
+from Snteam.utils.stream.stream import stream
 
 # Command
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
@@ -46,7 +46,7 @@ async def check_playlist(client, message: Message, _):
         count += 1
         msg += f"\n\n{count}- {title[:70]}\n"
         msg += _["playlist_5"].format(duration)
-    link = await Bikashhbin(msg)
+    link = await Snteamhbin(msg)
     lines = msg.count("\n")
     if lines >= 17:
         car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -214,7 +214,7 @@ async def add_playlist(client, CallbackQuery, _):
     try:
         title = (title[:30]).title()
         return await CallbackQuery.message.reply_text(
-            text="☘ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 𝐀𝐝𝐝𝐞𝐝.\n │\n └𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 : {0} \n\n 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 [𝐁𝐢𝐤𝐚𝐬𝐡](https://t.me/BikashGadGetsTech)".format(CallbackQuery.from_user.mention),
+            text="☘ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 𝐀𝐝𝐝𝐞𝐝.\n │\n └𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 : {0} \n\n 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 [Snteam](https://t.me/Snmusic2)".format(CallbackQuery.from_user.mention),
             reply_markup=close_keyboard,
         )
     except:

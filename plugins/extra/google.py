@@ -63,7 +63,7 @@ def btn(text, value, type="callback_data"):
 async def search_(bot: app, message: Message):
     split = message.text.split(None, 1)
     if len(split) == 1:
-        return await message.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n\n Join @BikashGadgetsTech**")
+        return await message.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n\n Join @snmusic2**")
     to_del = await message.reply_text("**sᴇᴀʀᴄʜɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ...**")
     query = split[1]
     try:
@@ -108,17 +108,17 @@ async def search_(bot: app, message: Message):
             ]
         )
 
-        txt = f"**ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʀǫᴜᴇsᴛᴇᴅ : {query.title()} \n\n Join @BikashGadgetsTech**"
+        txt = f"**ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʀǫᴜᴇsᴛᴇᴅ : {query.title()} \n\n Join @Snmusic2**"
         await to_del.delete()
         await message.reply_text(txt, reply_markup=keyboard)
         return
     except NoResultsFound:
         await to_del.delete()
-        await message.reply_text("**ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴄᴏʀʀᴇsᴘᴏɴᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ\n\n Join @BikashGadgetsTech**")
+        await message.reply_text("**ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴄᴏʀʀᴇsᴘᴏɴᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ\n\n Join @Snmusic2**")
         return
     except NoResultsOrTrafficError:
         await to_del.delete()
-        await message.reply_text("****ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴅᴜᴇ ᴛᴏ ᴛᴏᴏ ᴍᴀɴʏ ᴛʀᴀғғɪᴄ\n\n Join @BikashGadgetsTech**")
+        await message.reply_text("****ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴅᴜᴇ ᴛᴏ ᴛᴏᴏ ᴍᴀɴʏ ᴛʀᴀғғɪᴄ\n\n Join @Snmusic2**")
         return
     except Exception as e:
         await to_del.delete()
@@ -132,7 +132,7 @@ async def search_(bot: app, message: Message):
 async def stack_search_(bot: app, message: Message):
     split = message.text.split(None, 1)
     if len(split) == 1:
-        return await message.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n\n Join @BikashGadgetsTech**")
+        return await message.reply_text("**ɢɪᴠᴇ ǫᴜᴇʀʏ ᴛᴏ sᴇᴀʀᴄʜ\n\n Join @Snmusic2**")
     to_del = await message.reply_text("**sᴇᴀʀᴄʜɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ...**")
     query = split[1]
     try:
@@ -177,17 +177,17 @@ async def stack_search_(bot: app, message: Message):
             ]
         )
 
-        txt = f"**ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʀǫᴜᴇsᴛᴇᴅ : {query.title()} \n\n Join @BikashGadgetsTech**"
+        txt = f"**ʜᴇʀᴇ ᴀʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʀǫᴜᴇsᴛᴇᴅ : {query.title()} \n\n Join @Snmusic2**"
         await to_del.delete()
         await message.reply_text(txt, reply_markup=keyboard)
         return
     except NoResultsFound:
         await to_del.delete()
-        await message.reply_text("**ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴄᴏʀʀᴇsᴘᴏɴᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ\n\n Join @BikashGadgetsTech**")
+        await message.reply_text("**ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴄᴏʀʀᴇsᴘᴏɴᴅɪɴɢ ᴛᴏ ʏᴏᴜʀ ǫᴜᴇʀʏ\n\n Join @Snmusic2**")
         return
     except NoResultsOrTrafficError:
         await to_del.delete()
-        await message.reply_text("****ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴅᴜᴇ ᴛᴏ ᴛᴏᴏ ᴍᴀɴʏ ᴛʀᴀғғɪᴄ\n\n Join @BikashGadgetsTech**")
+        await message.reply_text("****ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ ᴅᴜᴇ ᴛᴏ ᴛᴏᴏ ᴍᴀɴʏ ᴛʀᴀғғɪᴄ\n\n Join @Snmusic2**")
         return
     except Exception as e:
         await to_del.delete()

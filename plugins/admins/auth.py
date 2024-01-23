@@ -1,20 +1,20 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 
 
 
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS, adminlist
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.database import (delete_authuser, get_authuser,
+from Snteam.config import BANNED_USERS, adminlist
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from Bikash.utils.decorators import AdminActual
-from Bikash.utils.formatters import int_to_alpha
+from Snteam.utils.decorators import AdminActual
+from Snteam.utils.formatters import int_to_alpha
 
 # Command
 AUTH_COMMAND = get_command("AUTH_COMMAND")
@@ -155,7 +155,7 @@ async def authusers(client, message: Message, _):
         await message.reply_text(text)
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 

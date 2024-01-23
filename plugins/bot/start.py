@@ -1,7 +1,7 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 import asyncio
 import time
@@ -11,15 +11,15 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 from youtubesearchpython.__future__ import VideosSearch
 
-from Bikash import config
-from Bikash.config import BANNED_USERS
-from Bikash.config import OWNER_ID
-from Bikash.Bgt import get_command, get_string
-from Bikash import Telegram, YouTube, app
-from Bikash.misc import SUDOERS, _boot_
+from Snmusic import config
+from Snmusic.config import BANNED_USERS
+from Snmusic.config import OWNER_ID
+from Snmusic.Bgt import get_command, get_string
+from Snmusic import Telegram, YouTube, app
+from Snmusic.misc import SUDOERS, _boot_
 from plugins.play.playlist import del_plist_msg
 from plugins.sudo.sudoers import sudoers_list
-from Bikash.utils.database import (add_served_chat,
+from Snmusic.utils.database import (add_served_chat,
                                        add_served_user,
                                        get_served_chats,
                                        get_served_users,
@@ -27,9 +27,9 @@ from Bikash.utils.database import (add_served_chat,
                                        get_assistant, get_lang,
                                        get_userss, is_on_off,
                                        is_served_private_chat)
-from Bikash.utils.decorators.language import LanguageStart
-from Bikash.utils.formatters import get_readable_time
-from Bikash.utils.inline import (help_pannel, private_panel,
+from Snmusic.utils.decorators.language import LanguageStart
+from Snmusic.utils.formatters import get_readable_time
+from Snmusic.utils.inline import (help_pannel, private_panel,
                                      start_pannel)
 
 loop = asyncio.get_running_loop()
@@ -305,7 +305,7 @@ async def welcome(client, message: Message):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

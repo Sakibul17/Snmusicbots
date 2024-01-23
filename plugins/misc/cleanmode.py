@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.raw import types
 
-from Bikash import config
-from Bikash.config import adminlist, chatstats, clean, userstats
-from Bikash.Bgt import get_command
-from Bikash import app, userbot
-from Bikash.misc import SUDOERS
-from Bikash.utils.database import (get_active_chats,
+from Snteam import config
+from Snteam.config import adminlist, chatstats, clean, userstats
+from Snteam.Bgt import get_command
+from Snteam import app, userbot
+from Snteam.misc import SUDOERS
+from Snteam.utils.database import (get_active_chats,
                                        get_authuser_names, get_client,
                                        get_particular_top,
                                        get_served_chats,
@@ -18,8 +18,8 @@ from Bikash.utils.database import (get_active_chats,
                                        is_cleanmode_on, set_queries,
                                        update_particular_top,
                                        update_user_top)
-from Bikash.utils.decorators.language import language
-from Bikash.utils.formatters import alpha_to_int
+from Snteam.utils.decorators.language import language
+from Snteam.utils.formatters import alpha_to_int
 
 BROADCAST_COMMAND = get_command("BROADCAST_COMMAND")
 AUTO_DELETE = config.CLEANMODE_DELETE_MINS
@@ -156,7 +156,7 @@ async def braodcast_message(client, message, _):
     if "-assistant" in message.text:
         aw = await message.reply_text(_["broad_2"])
         text = _["broad_3"]
-        from Bikash.core.userbot import assistants
+        from Snteam.core.userbot import assistants
 
         for num in assistants:
             sent = 0

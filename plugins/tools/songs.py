@@ -8,13 +8,13 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaAudio,
                             InputMediaVideo, Message)
 
-from Bikash.config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
+from Snteam.config import (BANNED_USERS, SONG_DOWNLOAD_DURATION,
                     SONG_DOWNLOAD_DURATION_LIMIT)
-from Bikash.Bgt import get_command
-from Bikash import YouTube, app
-from Bikash.utils.decorators.language import language, languageCB
-from Bikash.utils.formatters import convert_bytes
-from Bikash.utils.inline.song import song_markup
+from Snteam.Bgt import get_command
+from Snteam import YouTube, app
+from Snteam.utils.decorators.language import language, languageCB
+from Snteam.utils.formatters import convert_bytes
+from Snteam.utils.inline.song import song_markup
 
 # Command
 SONG_COMMAND = get_command("SONG_COMMAND")

@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils.database.memorydatabase import (
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils.database.memorydatabase import (
     get_active_chats, get_active_video_chats)
 
 # Commands

@@ -4,13 +4,13 @@ import importlib
 from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
-from Bikash import config
-from Bikash import LOGGER, app, userbot
-from Bikash.core.call import Bikashh
-from Bikash.misc import sudo
+from Snteam import config
+from Snteam import LOGGER, app, userbot
+from Snteam.core.call import Snteamh
+from Snteam.misc import sudo
 from plugins import ALL_MODULES
-from Bikash.utils.database import get_banned_users, get_gbanned
-from Bikash.config import BANNED_USERS
+from Snteam.utils.database import get_banned_users, get_gbanned
+from Snteam.config import BANNED_USERS
 
 
 async def init():
@@ -38,15 +38,15 @@ async def init():
         importlib.import_module("plugins" + all_module)
     LOGGER("plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await Bikashh.start()
-    await Bikashh.decorators()
-    LOGGER("Bikash").info(
+    await Snteamh.start()
+    await Snteamh.decorators()
+    LOGGER("Snteam").info(
         "bot started"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("Bikash").info("Stopping Music Bot...")
+    LOGGER("Snteam").info("Stopping Music Bot...")
 
 
 if __name__ == "__main__":

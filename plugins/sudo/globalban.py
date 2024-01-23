@@ -5,18 +5,18 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils import get_readable_time
-from Bikash.utils.database import (add_banned_user,
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils import get_readable_time
+from Snteam.utils.database import (add_banned_user,
                                        get_banned_count,
                                        get_banned_users,
                                        get_served_chats,
                                        is_banned_user,
                                        remove_banned_user)
-from Bikash.utils.decorators.language import language
+from Snteam.utils.decorators.language import language
 
 # Command
 GBAN_COMMAND = get_command("GBAN_COMMAND")

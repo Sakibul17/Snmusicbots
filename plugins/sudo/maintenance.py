@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.Bgt import get_command, get_string
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils.database import (get_lang, is_maintenance,
+from Snteam.Bgt import get_command, get_string
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils.database import (get_lang, is_maintenance,
                                        maintenance_off,
                                        maintenance_on)
-from Bikash.utils.decorators.language import language
+from Snteam.utils.decorators.language import language
 
 # Commands
 MAINTENANCE_COMMAND = get_command("MAINTENANCE_COMMAND")

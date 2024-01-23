@@ -1,10 +1,10 @@
 import asyncio
 from datetime import datetime
 
-from Bikash import config
-from Bikash import app
-from Bikash.core.call import Bikashh, autoend
-from Bikash.utils.database import (get_client, is_active_chat,
+from Snteam import config
+from Snteam import app
+from Snteam.core.call import Snteamh, autoend
+from Snteam.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 
@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from Bikash.core.userbot import assistants
+            from Snteam.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -64,7 +64,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Bikashh.stop_stream(chat_id)
+                    await Snteamh.stop_stream(chat_id)
                 except:
                     continue
                 try:

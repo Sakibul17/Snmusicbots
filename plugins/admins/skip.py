@@ -1,25 +1,25 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from Bikash import config
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import YouTube, app
-from Bikash.core.call import Bikashh
-from Bikash.misc import db
-from Bikash.utils.database import get_loop
-from Bikash.utils.decorators import AdminRightsCheck
-from Bikash.utils.bgtmusic.bk import command
-from Bikash.utils.inline.play import (stream_markup,
+from Snmusic import config
+from Snmusic.config import BANNED_USERS
+from Snmusic.Bgt import get_command
+from Snmusic import YouTube, app
+from Snmusic.core.call import Snmusich
+from Snmusic.misc import db
+from Snmusic.utils.database import get_loop
+from Snmusic.utils.decorators import AdminRightsCheck
+from Snmusic.utils.bgtmusic.bk import command
+from Snmusic.utils.inline.play import (stream_markup,
                                           telegram_markup,
                                           close_keyboard)
-from Bikash.utils.stream.autoclear import auto_clean
-from Bikash.utils.thumbnails import gen_thumb
+from Snmusic.utils.stream.autoclear import auto_clean
+from Snmusic.utils.thumbnails import gen_thumb
 
 # Commands
 SKIP_COMMAND = get_command("SKIP_COMMAND")
@@ -68,7 +68,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_keyboard
                                     )
-                                    await Bikashh.stop_stream(chat_id)
+                                    await Snmusich.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -96,7 +96,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_keyboard
                 )
                 try:
-                    return await Bikashh.stop_stream(chat_id)
+                    return await Snmusich.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -105,7 +105,7 @@ async def skip(cli, message: Message, _, chat_id):
                     _["admin_10"].format(message.from_user.first_name, message.chat.title),
                     reply_markup=close_keyboard
                 )
-                return await Bikashh.stop_stream(chat_id)
+                return await Snmusich.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -127,7 +127,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Bikashh.skip_stream(chat_id, link, video=status, image=image)
+            await Snmusich.skip_stream(chat_id, link, video=status, image=image)
         except Exception:
             return await message.reply_text(_["call_9"])
 
@@ -161,7 +161,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Bikashh.skip_stream(chat_id, file_path, video=status, image=image)
+            await Snmusich.skip_stream(chat_id, file_path, video=status, image=image)
         except Exception:
             return await mystic.edit_text(_["call_9"])
         button = stream_markup(_, videoid, chat_id)
@@ -181,7 +181,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Bikashh.skip_stream(chat_id, videoid, video=status)
+            await Snmusich.skip_stream(chat_id, videoid, video=status)
         except Exception:
             return await message.reply_text(_["call_9"])
         button = telegram_markup(_, chat_id)
@@ -203,7 +203,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await Bikashh.skip_stream(chat_id, queued, video=status, image=image)
+            await Snmusich.skip_stream(chat_id, queued, video=status, image=image)
         except Exception:
             return await message.reply_text(_["call_9"])
         if videoid == "telegram":

@@ -1,16 +1,16 @@
 import random
 import re
-from Bikash import Bgt
+from Snteam import Bgt
 
 import lyricsgenius as lg
 from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from Bikash.config import BANNED_USERS, lyrical
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.decorators.language import language
+from Snteam.config import BANNED_USERS, lyrical
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.utils.decorators.language import language
 
 ###Commands
 LYRICS_COMMAND = get_command("LYRICS_COMMAND")

@@ -13,16 +13,16 @@ from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
-from Bikash import config
-from Bikash.config import OWNER_ID
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import HAPP, SUDOERS, XCB
-from Bikash.utils.database import (get_active_chats,
+from Snteam import config
+from Snteam.config import OWNER_ID
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import HAPP, SUDOERS, XCB
+from Snteam.utils.database import (get_active_chats,
                                        remove_active_chat,
                                        remove_active_video_chat)
-from Bikash.utils.decorators.language import language
-from Bikash.utils.pastebin import Bikashhbin
+from Snteam.utils.decorators.language import language
+from Snteam.utils.pastebin import Snteamhbin
 
 # Commands
 GETLOG_COMMAND = get_command("GETLOG_COMMAND")
@@ -48,7 +48,7 @@ async def log_(client, message, _):
             if HAPP is None:
                 return await message.reply_text(_["heroku_1"])
             data = HAPP.get_log()
-            link = await Bikashhbin(data)
+            link = await Snteamhbin(data)
             return await message.reply_text(link)
         else:
             if os.path.exists(config.LOG_FILE_NAME):
@@ -61,7 +61,7 @@ async def log_(client, message, _):
                     NUMB = 100
                 for x in lines[-NUMB:]:
                     data += x
-                link = await Bikashhbin(data)
+                link = await Snteamhbin(data)
                 return await message.reply_text(link)
             else:
                 return await message.reply_text(_["heroku_2"])
@@ -125,7 +125,7 @@ async def vardel_(client, message, _):
             return await message.reply_text(_["heroku_4"])
         else:
             await message.reply_text(_["heroku_7"].format(check_var))
-            os.system(f"kill -9 {os.getpid()} && python3 -m Bikash")
+            os.system(f"kill -9 {os.getpid()} && python3 -m Snteam")
 
 
 @app.on_message(filters.command(SETVAR_COMMAND) & filters.user(OWNER_ID))
@@ -154,7 +154,7 @@ async def set_var(client, message, _):
             await message.reply_text(_["heroku_9"].format(to_set))
         else:
             await message.reply_text(_["heroku_10"].format(to_set))
-        os.system(f"kill -9 {os.getpid()} && python3 -m Bikash")
+        os.system(f"kill -9 {os.getpid()} && python3 -m Snteam")
 
 
 @app.on_message(filters.command(USAGE_COMMAND) & filters.user(OWNER_ID))
@@ -257,7 +257,7 @@ async def update_(client, message, _):
     _update_response_ = "𝐍𝐞𝐰 𝐔𝐨𝐝𝐚𝐭𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ✔️\n\n𝐏𝐮𝐬𝐡𝐢𝐧𝐠 𝐍𝐞𝐰 𝐔𝐨𝐝𝐚𝐭𝐞𝐬 ❗\n\n**𝐔𝐩𝐝𝐚𝐭𝐞𝐬:**\n\n[𝐂𝐡𝐞𝐜𝐤 𝐔𝐩𝐝𝐚𝐭𝐞𝐬]({url})"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await Bikashhbin(updates)
+        url = await Snteamhbin(updates)
         nrs = await response.edit(
             f"𝐍𝐞𝐰 𝐔𝐨𝐝𝐚𝐭𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ✔️\n\n𝐏𝐮𝐬𝐡𝐢𝐧𝐠 𝐍𝐞𝐰 𝐔𝐨𝐝𝐚𝐭𝐞𝐬 ❗\n\n**𝐔𝐩𝐝𝐚𝐭𝐞𝐬:**\n\n[𝐂𝐡𝐞𝐜𝐤 𝐔𝐩𝐝𝐚𝐭𝐞𝐬]({url})"
         )
@@ -310,7 +310,7 @@ async def update_(client, message, _):
             f"{nrs.text}\n\n𝐁𝐨𝐭 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ! 𝐍𝐨𝐰 𝐖𝐚𝐢𝐭 𝐅𝐨𝐫 𝐅𝐞𝐰 𝐌𝐢𝐧𝐬 𝐅𝐨𝐫 𝐍𝐞𝐰 𝐔𝐩𝐝𝐚𝐭𝐞𝐬"
         )
         os.system("pip3 install -r Installer")
-        os.system(f"kill -9 {os.getpid()} && python3 -m Bikash")
+        os.system(f"kill -9 {os.getpid()} && python3 -m Snteam")
         exit()
 
 
@@ -340,4 +340,4 @@ async def restart_(_, message):
     await response.edit(
         "𝐁𝐠𝐭 𝐌𝐮𝐬𝐢𝐜 𝐁𝐨𝐭 𝐑𝐞𝐛𝐨𝐨𝐭 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ! 𝐖𝐚𝐢𝐭 𝐅𝐞𝐰 𝐌𝐢𝐧𝐮𝐭𝐞𝐬.."
     )
-    os.system(f"kill -9 {os.getpid()} && python3 -m Bikash")
+    os.system(f"kill -9 {os.getpid()} && python3 -m Snteam")

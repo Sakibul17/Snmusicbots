@@ -1,8 +1,8 @@
-from Bikash.core.bot import BikashBot
-from Bikash.core.dir import dirr
-from Bikash.core.git import git
-from Bikash.core.userbot import Userbot
-from Bikash.misc import dbb, heroku
+from Snteam.core.bot import SnteamBot
+from Snteam.core.dir import dirr
+from Snteam.core.git import git
+from Snteam.core.userbot import Userbot
+from Snteam.misc import dbb, heroku
 
 from .logging import LOGGER
 
@@ -16,7 +16,7 @@ dbb()
 heroku()
 
 # Clients
-app = BikashBot()
+app = SnteamBot()
 
 userbot = Userbot()
 

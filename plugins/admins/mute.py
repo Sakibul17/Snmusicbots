@@ -1,16 +1,16 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Update
-# Join @AdityaCheats For Hack
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 
 
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS
-from Bikash import app
-from Bikash.core.call import Bikashh
-from Bikash.utils.database import is_muted, mute_on
-from Bikash.utils.decorators import AdminRightsCheck
+from Snteam.config import BANNED_USERS
+from Snteam import app
+from Snteam.core.call import Snteamh
+from Snteam.utils.database import is_muted, mute_on
+from Snteam.utils.decorators import AdminRightsCheck
 
 
 @app.on_message(
@@ -25,12 +25,12 @@ async def mute_admin(cli, message: Message, _, chat_id):
     if await is_muted(chat_id):
         return await message.reply_text("**🔇 𝐁𝐠𝐭 𝐌𝐮𝐬𝐢𝐜 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐌𝐮𝐭𝐞𝐝 🌷 ...**")
     await mute_on(chat_id)
-    await Bikashh.mute_stream(chat_id)
+    await Snteamh.mute_stream(chat_id)
     await message.reply_text("**🔇 𝐌𝐮𝐭𝐞𝐝 🌷 ...**\n\n⎿𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 > {}")
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Update
-# Join @AdityaCheats For Hack
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 

@@ -1,11 +1,11 @@
 from pyrogram import filters
 
-from Bikash import config
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils.database import add_off, add_on
-from Bikash.utils.decorators.language import language
+from Snteam import config
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils.database import add_off, add_on
+from Snteam.utils.decorators.language import language
 
 # Commands
 LOGGER_COMMAND = get_command("LOGGER_COMMAND")

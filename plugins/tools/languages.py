@@ -1,17 +1,17 @@
-# Power By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Update
-# Join @AdityaCheats For Hack
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 
 
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command, get_string
-from Bikash import app
-from Bikash.utils.database import get_lang, set_lang
-from Bikash.utils.decorators import (ActualAdminCB, language,
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command, get_string
+from Snteam import app
+from Snteam.utils.database import get_lang, set_lang
+from Snteam.utils.decorators import (ActualAdminCB, language,
                                          languageCB)
 
 # Languages Available
@@ -101,7 +101,7 @@ async def language_markup(client, CallbackQuery, _):
 
 
 
-# Power By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Update
-# Join @AdityaCheats For Hack
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 

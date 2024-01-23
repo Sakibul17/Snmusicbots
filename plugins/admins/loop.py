@@ -1,18 +1,18 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.database.memorydatabase import (get_loop,
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.utils.database.memorydatabase import (get_loop,
                                                       set_loop)
-from Bikash.utils.decorators import AdminRightsCheck
+from Snteam.utils.decorators import AdminRightsCheck
 
 # Commands
 LOOP_COMMAND = get_command("LOOP_COMMAND")
@@ -58,7 +58,7 @@ async def admins(cli, message: Message, _, chat_id):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

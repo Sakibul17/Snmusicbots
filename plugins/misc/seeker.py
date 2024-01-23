@@ -1,7 +1,7 @@
 import asyncio
 
-from Bikash.misc import db
-from Bikash.utils.database import get_active_chats, is_music_playing
+from Snteam.misc import db
+from Snteam.utils.database import get_active_chats, is_music_playing
 
 
 async def timer():

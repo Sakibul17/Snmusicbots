@@ -1,10 +1,10 @@
 from pyrogram import filters
 
-from Bikash.config import BANNED_USERS
-from Bikash import YouTube, app
-from Bikash.utils.channelplay import get_channeplayCB
-from Bikash.utils.decorators.language import languageCB
-from Bikash.utils.stream.stream import stream
+from Snteam.config import BANNED_USERS
+from Snteam import YouTube, app
+from Snteam.utils.channelplay import get_channeplayCB
+from Snteam.utils.decorators.language import languageCB
+from Snteam.utils.stream.stream import stream
 
 
 @app.on_callback_query(filters.regex("LiveStream") & ~BANNED_USERS)

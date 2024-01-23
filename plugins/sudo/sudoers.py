@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS, MONGO_DB_URI, OWNER_ID, MUSIC_BOT_NAME
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils.database import add_sudo, remove_sudo
-from Bikash.utils.decorators.language import language
+from Snteam.config import BANNED_USERS, MONGO_DB_URI, OWNER_ID, MUSIC_BOT_NAME
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils.database import add_sudo, remove_sudo
+from Snteam.utils.decorators.language import language
 
 # Command
 ADDSUDO_COMMAND = get_command("ADDSUDO_COMMAND")

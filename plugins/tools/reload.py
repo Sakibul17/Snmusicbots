@@ -5,15 +5,15 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from Bikash.config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.core.call import Bikashh
-from Bikash.misc import db
-from Bikash.utils.database import get_authuser_names, get_cmode
-from Bikash.utils.decorators import (ActualAdminCB, AdminActual,
+from Snteam.config import BANNED_USERS, MUSIC_BOT_NAME, adminlist, lyrical
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.core.call import Snteamh
+from Snteam.misc import db
+from Snteam.utils.database import get_authuser_names, get_cmode
+from Snteam.utils.decorators import (ActualAdminCB, AdminActual,
                                          language)
-from Bikash.utils.formatters import alpha_to_int
+from Snteam.utils.formatters import alpha_to_int
 
 ### Multi-Lang Commands
 RELOAD_COMMAND = get_command("RELOAD_COMMAND")
@@ -64,7 +64,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await Bikashh.stop_stream(message.chat.id)
+        await Snteamh.stop_stream(message.chat.id)
     except:
         pass
     chat_id = await get_cmode(message.chat.id)
@@ -75,7 +75,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Bikashh.stop_stream(chat_id)
+            await Snteamh.stop_stream(chat_id)
         except:
             pass
     return await mystic.edit_text(

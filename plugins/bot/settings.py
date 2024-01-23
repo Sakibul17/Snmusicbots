@@ -1,18 +1,18 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from Bikash.config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
+from Snmusic.config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.database import (add_nonadmin_chat,
+from Snmusic.Bgt import get_command
+from Snmusic import app
+from Snmusic.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -27,13 +27,13 @@ from Bikash.utils.database import (add_nonadmin_chat,
                                        save_audio_bitrate,
                                        save_video_bitrate,
                                        set_playmode, set_playtype)
-from Bikash.utils.decorators.admins import ActualAdminCB
-from Bikash.utils.decorators.language import language, languageCB
-from Bikash.utils.inline.settings import (
+from Snmusic.utils.decorators.admins import ActualAdminCB
+from Snmusic.utils.decorators.language import language, languageCB
+from Snmusic.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from Bikash.utils.inline.start import private_panel
+from Snmusic.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
@@ -531,7 +531,7 @@ async def cleanmode_mark(client, CallbackQuery, _):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

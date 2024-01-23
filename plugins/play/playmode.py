@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.database import (get_playmode, get_playtype,
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.utils.database import (get_playmode, get_playtype,
                                        is_nonadmin_chat)
-from Bikash.utils.decorators import language
-from Bikash.utils.inline.settings import playmode_users_markup
+from Snteam.utils.decorators import language
+from Snteam.utils.inline.settings import playmode_users_markup
 
 ### Commands
 PLAYMODE_COMMAND = get_command("PLAYMODE_COMMAND")

@@ -1,19 +1,19 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import YouTube, app
-from Bikash.core.call import Bikashh
-from Bikash.misc import db
-from Bikash.utils.bgtmusic.bk import command
-from Bikash.utils import AdminRightsCheck, seconds_to_min
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import YouTube, app
+from Snteam.core.call import Snteamh
+from Snteam.misc import db
+from Snteam.utils.bgtmusic.bk import command
+from Snteam.utils import AdminRightsCheck, seconds_to_min
 
 # Commands
 SEEK_COMMAND = get_command("SEEK_COMMAND")
@@ -67,7 +67,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
         if n == 0:
             return await message.reply_text(_["admin_30"])
     try:
-        await Bikashh.seek_stream(
+        await Snteamh.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
@@ -86,7 +86,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

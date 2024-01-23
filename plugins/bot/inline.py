@@ -1,7 +1,7 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 
 from pyrogram.types import (InlineKeyboardButton,
@@ -9,9 +9,9 @@ from pyrogram.types import (InlineKeyboardButton,
                             InlineQueryResultPhoto)
 from youtubesearchpython.__future__ import VideosSearch
 
-from Bikash.config import BANNED_USERS, MUSIC_BOT_NAME
-from Bikash import app
-from Bikash.utils.inlinequery import answer
+from Snmusic.config import BANNED_USERS, MUSIC_BOT_NAME
+from Snmusic import app
+from Snmusic.utils.inlinequery import answer
 
 
 @app.on_inline_query(~BANNED_USERS)
@@ -79,7 +79,7 @@ async def inline_query_handler(client, query):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

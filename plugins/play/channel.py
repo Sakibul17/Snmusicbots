@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.utils.database import set_cmode
-from Bikash.utils.decorators.admins import AdminActual
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.utils.database import set_cmode
+from Snteam.utils.decorators.admins import AdminActual
 
 ### Multi-Lang Commands
 CHANNELPLAY_COMMAND = get_command("CHANNELPLAY_COMMAND")

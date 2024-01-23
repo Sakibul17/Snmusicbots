@@ -2,12 +2,12 @@ import asyncio
 
 from pyrogram import filters
 
-from Bikash import config
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils.database.memorydatabase import get_video_limit
-from Bikash.utils.formatters import convert_bytes
+from Snteam import config
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
+from Snteam.utils.database.memorydatabase import get_video_limit
+from Snteam.utils.formatters import convert_bytes
 
 VARS_COMMAND = get_command("VARS_COMMAND")
 

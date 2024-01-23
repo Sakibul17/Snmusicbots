@@ -1,7 +1,7 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit 
 
 import os
 import random
@@ -10,16 +10,16 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
-from Bikash.Bgt import get_string
-from Bikash.config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
+from Snteam.Bgt import get_string
+from Snteam.config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
                     TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL,
                     MUSIC_BOT_NAME, adminlist)
-from Bikash import YouTube, app
-from Bikash.core.call import Bikashh
-from Bikash.misc import SUDOERS, db
-from Bikash.utils import bot_sys_stats
-from Bikash.utils.database import (
+from Snteam import YouTube, app
+from Snteam.core.call import Snteamh
+from Snteam.misc import SUDOERS, db
+from Snteam.utils import bot_sys_stats
+from Snteam.utils.database import (
     get_active_chats,
     get_lang,
     is_active_chat,
@@ -29,17 +29,17 @@ from Bikash.utils.database import (
     music_on,
     set_loop,
 )
-from Bikash.utils.decorators.language import languageCB
-from Bikash.utils.formatters import seconds_to_min
-from Bikash.utils.inline import (
+from Snteam.utils.decorators.language import languageCB
+from Snteam.utils.formatters import seconds_to_min
+from Snteam.utils.inline import (
     stream_markup,
     stream_markup_timer,
     telegram_markup,
     telegram_markup_timer,
     close_keyboard,
 )
-from Bikash.utils.stream.autoclear import auto_clean
-from Bikash.utils.thumbnails import gen_thumb
+from Snteam.utils.stream.autoclear import auto_clean
+from Snteam.utils.thumbnails import gen_thumb
 
 wrong = {}
 checker = {}
@@ -125,7 +125,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await Bikashh.pause_stream(chat_id)
+        await Snteamh.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention),
             reply_markup=close_keyboard
@@ -137,14 +137,14 @@ async def del_back_playlist(client, CallbackQuery, _):
             )
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await Bikashh.resume_stream(chat_id)
+        await Snteamh.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention),
             reply_markup=close_keyboard
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await Bikashh.stop_stream(chat_id)
+        await Snteamh.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.delete()
         await CallbackQuery.message.reply_text(
@@ -186,7 +186,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     _["admin_10"].format(mention, CallbackQuery.message.chat.title)
                 )
                 try:
-                    return await Bikashh.stop_stream(chat_id)
+                    return await Snteamh.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -198,7 +198,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 await CallbackQuery.message.reply_text(
                     _["admin_10"].format(mention, CallbackQuery.message.chat.title)
                 )
-                return await Bikashh.stop_stream(chat_id)
+                return await Snteamh.stop_stream(chat_id)
             except:
                 return
         await CallbackQuery.answer()
@@ -222,7 +222,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await Bikashh.skip_stream(chat_id, link, video=status, image=image)
+                await Snteamh.skip_stream(chat_id, link, video=status, image=image)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -258,7 +258,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await Bikashh.skip_stream(
+                await Snteamh.skip_stream(
                     chat_id, file_path, video=status, image=image
                 )
             except Exception:
@@ -281,7 +281,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await Bikashh.skip_stream(
+                await Snteamh.skip_stream(
                     chat_id, videoid, video=status
                 )
             except Exception:
@@ -308,7 +308,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await Bikashh.skip_stream(chat_id, queued, video=status, image=image)
+                await Snteamh.skip_stream(chat_id, queued, video=status, image=image)
             except Exception:
                 return await CallbackQuery.message.reply_text(
                     _["call_9"]
@@ -405,7 +405,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             if n == 0:
                 return await mystic.edit_text(_["admin_30"])
         try:
-            await Bikashh.seek_stream(
+            await Snteamh.seek_stream(
                 chat_id,
                 file_path,
                 seconds_to_min(to_seek),
@@ -483,7 +483,7 @@ asyncio.create_task(markup_timer())
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofi 

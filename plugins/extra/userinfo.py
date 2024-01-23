@@ -1,11 +1,11 @@
-## Bikash Halder & Aditya Halder
+## Snteam
 
 import os
-from Bikash.config import BANNED_USERS
+from Snteam.config import BANNED_USERS
 from pyrogram import filters
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode
-from Bikash import app
+from Snteam import app
 
 
 n = "\n"

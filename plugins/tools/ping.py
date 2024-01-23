@@ -3,13 +3,13 @@ from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message
 
-from Bikash.config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.core.call import Bikashh
-from Bikash.utils import bot_sys_stats
-from Bikash.utils.decorators.language import language
-from Bikash.utils.inline.play import close_keyboard
+from Snteam.config import BANNED_USERS, MUSIC_BOT_NAME, PING_IMG_URL
+from Snteam.Sn import get_command
+from Snteam import app
+from Snteam.core.call import Snteamh
+from Snteam.utils import bot_sys_stats
+from Snteam.utils.decorators.language import language
+from Snteam.utils.inline.play import close_keyboard
 
 ### Commands
 PING_COMMAND = get_command("PING_COMMAND")
@@ -25,7 +25,7 @@ async def ping_com(client, message: Message, _):
         caption=_["ping_1"],
     )
     start = datetime.now()
-    pytgping = await Bikashh.ping()
+    pytgping = await Snteamh.ping()
     UP, CPU, RAM, DISK = await bot_sys_stats()
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(

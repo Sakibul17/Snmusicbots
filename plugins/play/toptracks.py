@@ -3,15 +3,15 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup
 
-from Bikash.config import BANNED_USERS
-from Bikash import app
-from Bikash.utils.database import (get_global_tops,
+from Snteam.config import BANNED_USERS
+from Snteam import app
+from Snteam.utils.database import (get_global_tops,
                                        get_particulars, get_userss)
-from Bikash.utils.decorators.language import languageCB
-from Bikash.utils.inline.playlist import (botplaylist_markup,
+from Snteam.utils.decorators.language import languageCB
+from Snteam.utils.inline.playlist import (botplaylist_markup,
                                               failed_top_markup,
                                               top_play_markup)
-from Bikash.utils.stream.stream import stream
+from Snteam.utils.stream.stream import stream
 
 loop = asyncio.get_running_loop()
 

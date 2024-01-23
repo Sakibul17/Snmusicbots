@@ -1,7 +1,7 @@
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit
 
 
 
@@ -10,16 +10,16 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from Bikash import config
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command, get_string, helpers
-from Bikash import app
-from Bikash.misc import SUDOERS
-from Bikash.utils import help_pannel
-from Bikash.utils.database import get_lang, is_commanddelete_on
-from Bikash.utils.decorators.language import (LanguageStart,
+from Snmusic import config
+from Snmusic.config import BANNED_USERS
+from Snmusic.Bgt import get_command, get_string, helpers
+from Snmusic import app
+from Snmusic.misc import SUDOERS
+from Snmusic.utils import help_pannel
+from Snmusic.utils.database import get_lang, is_commanddelete_on
+from Snmusic.utils.decorators.language import (LanguageStart,
                                                   languageCB)
-from Bikash.utils.inline.help import (help_back_markup,
+from Snmusic.utils.inline.help import (help_back_markup,
                                           private_help_panel)
 
 ### Command
@@ -151,7 +151,7 @@ async def helper_cb(client, CallbackQuery, _):
 
 
 
-# Powered By @BikashHalder & @AdityaHalder 
-# Join @BikashGadgetsTech For More Updates
-# Join @AdityaCheats For Hacks
-# Join Our Chats @Bgt_Chat & @Adityadiscus 
+# Power By@simpleearningprofit
+# Join @snmusic1 For More Update
+# Join @simpleearningprofit For Hack
+# Join Our Chats @snmusic1 &@simpleearningprofit

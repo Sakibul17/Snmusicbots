@@ -6,17 +6,17 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
-from Bikash import config
-from Bikash.config import BANNED_USERS
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import db
-from Bikash.utils import (Bikashhbin, get_channeplayCB,
+from Snteam import config
+from Snteam.config import BANNED_USERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import db
+from Snteam.utils import (Snteamhbin, get_channeplayCB,
                               seconds_to_min)
-from Bikash.utils.database import (get_cmode, is_active_chat,
+from Snteam.utils.database import (get_cmode, is_active_chat,
                                        is_music_playing)
-from Bikash.utils.decorators.language import language, languageCB
-from Bikash.utils.inline import queue_back_markup, queue_markup
+from Snteam.utils.decorators.language import language, languageCB
+from Snteam.utils.inline import queue_back_markup, queue_markup
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -208,7 +208,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             )
         if "📌" in msg:
             msg = msg.replace("📌", "")
-        link = await Bikashhbin(msg)
+        link = await Snteamhbin(msg)
         med = InputMediaPhoto(
             media=link, caption=_["queue_3"].format(link)
         )

@@ -1,9 +1,9 @@
 import asyncio
 import speedtest
 from pyrogram import filters
-from Bikash.Bgt import get_command
-from Bikash import app
-from Bikash.misc import SUDOERS
+from Snteam.Bgt import get_command
+from Snteam import app
+from Snteam.misc import SUDOERS
 
 # Commands
 SPEEDTEST_COMMAND = get_command("SPEEDTEST_COMMAND")

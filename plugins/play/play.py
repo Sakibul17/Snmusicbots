@@ -1,7 +1,7 @@
-## Powered by Aditya & Bikash Halder 
+## Powered by Snteam
 
 import random
-from Bikash import Bgt
+from Snteam import Bgt
 from ast import ExceptHandler
 
 from pyrogram import filters
@@ -9,26 +9,26 @@ from pyrogram.types import (InlineKeyboardMarkup, InlineKeyboardButton, InputMed
                             Message)
 from pytgcalls.exceptions import NoActiveGroupCall
 
-from Bikash import config
-from Bikash.config import BANNED_USERS, lyrical
-from Bikash.Bgt import get_command
-from Bikash import (Apple, Resso, SoundCloud, Spotify, Telegram,
+from Snteam import config
+from Snteam.config import BANNED_USERS, lyrical
+from Snteam.Bgt import get_command
+from Snteam import (Apple, Resso, SoundCloud, Spotify, Telegram,
                         YouTube, app)
-from Bikash.core.call import Bikashh
-from Bikash.utils import seconds_to_min, time_to_seconds
-from Bikash.utils.channelplay import get_channeplayCB
-from Bikash.utils.database import is_video_allowed
-from Bikash.utils.decorators.language import languageCB
-from Bikash.utils.decorators.play import PlayWrapper
-from Bikash.utils.bgtmusic.bk import command
-from Bikash.utils.formatters import formats
-from Bikash.utils.inline.play import (livestream_markup,
+from Snteam.core.call import Snteamh
+from Snteam.utils import seconds_to_min, time_to_seconds
+from Snteam.utils.channelplay import get_channeplayCB
+from Snteam.utils.database import is_video_allowed
+from Snteam.utils.decorators.language import languageCB
+from Snteam.utils.decorators.play import PlayWrapper
+from Snteam.utils.bgtmusic.bk import command
+from Snteam.utils.formatters import formats
+from Snteam.utils.inline.play import (livestream_markup,
                                           playlist_markup,
                                           slider_markup, track_markup)
-from Bikash.utils.database import is_served_user
-from Bikash.utils.inline.playlist import botplaylist_markup
-from Bikash.utils.logger import play_logs
-from Bikash.utils.stream.stream import stream
+from Snteam.utils.database import is_served_user
+from Snteam.utils.inline.playlist import botplaylist_markup
+from Snteam.utils.logger import play_logs
+from Snteam.utils.stream.stream import stream
 
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
@@ -348,7 +348,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Bikashh.stream_call(url)
+                await Snteamh.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
                     "There's An Error In The Bot Then Report [𝐁𝐠𝐭 𝐂𝐡𝐚𝐭](https://t.me/Bgt_chat) AN Error"
@@ -616,7 +616,7 @@ async def anonymous_check(client, CallbackQuery):
 
 
 @app.on_callback_query(
-    filters.regex("BikashhPlaylists") & ~BANNED_USERS
+    filters.regex("SnteamhPlaylists") & ~BANNED_USERS
 )
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):

@@ -1,4 +1,4 @@
-#bikashhalder
+#snteam
 
 import os
 import sys
@@ -7,11 +7,11 @@ from os import system, execle, environ
 from git.exc import InvalidGitRepositoryError
 from pyrogram.types import Message
 from pyrogram import filters, client
-from Bikash.config import UPSTREAM_REPO, UPSTREAM_BRANCH, GIT_TOKEN, OWNER_ID
-from Bikash import app
+from Snteam.config import UPSTREAM_REPO, UPSTREAM_BRANCH, GIT_TOKEN, OWNER_ID
+from Snteam import app
 
 if GIT_TOKEN:
-     UPSTREAM_REPO = 'https://github.com/BikashHalderNew/Bgtplayer'
+     UPSTREAM_REPO = 'https://github.com/Snoffcial/Snmusicbot'
 else:
      UPSTREAM_REPO = UPSTREAM_REPO
 
@@ -66,6 +66,6 @@ async def update_bot(_, message: Message):
     if update_avail:
         await msg.edit("**🥀 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐢𝐧𝐠 𝐁𝐨𝐭, 𝐏𝐥𝐞𝐚𝐬𝐞 » 𝐖𝐚𝐢𝐭 ✨ ...**")
         os.system("git pull -f && pip3 install -U -r Installer")
-        os.system(f"kill -9 {os.getpid()} && bikash start")
+        os.system(f"kill -9 {os.getpid()} && Snteam start")
         return
     await msg.edit(f"**🥀 𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐓𝐨 𝐋𝐚𝐭𝐞𝐬𝐭 ✨ ...**")

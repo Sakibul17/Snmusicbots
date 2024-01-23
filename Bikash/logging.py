@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
-from Bikash.config import LOG_FILE_NAME
+from Sntean.config import LOG_FILE_NAME
 
 logging.basicConfig(
     level=logging.INFO,
